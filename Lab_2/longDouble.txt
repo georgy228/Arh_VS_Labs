@@ -1,0 +1,198 @@
+Project title : one
+Project path  : D:\институт\3 КУРС\Архитектура вычислительных систем\Arh_VS_Labs\Lab_2\CodeBlocks\one\
+
+Frame function: main (D:\институт\3 КУРС\Архитектура вычислительных систем\Arh_VS_Labs\Lab_2\CodeBlocks\one\main.cpp:8)
+Frame address : 0x61ff30
+--------------------------------------------------------------------------------
+;6  :	int main() {
+0x401460	lea    0x4(%esp),%ecx
+0x401464	and    $0xfffffff0,%esp
+0x401467	pushl  -0x4(%ecx)
+0x40146a	push   %ebp
+0x40146b	mov    %esp,%ebp
+0x40146d	push   %ecx
+0x40146e	sub    $0x44,%esp
+0x401471	call   0x401b30 <__main>
+;8  :		long double x=10;
+0x401476	fldt   0x405090
+0x40147c	fstpt  -0x20(%ebp)
+;9  :		long double y1=0;
+0x40147f	fldz
+0x401481	fstpt  -0x2c(%ebp)
+;10 :		long double y2=0;
+0x401484	fldz
+0x401486	fstpt  -0x38(%ebp)
+;11 :		long double y3=0;
+0x401489	fldz
+0x40148b	fstpt  -0x14(%ebp)
+;13 :		y1 = x * 5;
+0x40148e	fldt   -0x20(%ebp)
+0x401491	fldt   0x4050a0
+0x401497	fmulp  %st,%st(1)
+0x401499	fstpt  -0x2c(%ebp)
+;14 :		y2 = x * 7;
+0x40149c	fldt   -0x20(%ebp)
+0x40149f	fldt   0x4050b0
+0x4014a5	fmulp  %st,%st(1)
+0x4014a7	fstpt  -0x38(%ebp)
+;15 :		if (x < 7) {
+0x4014aa	fldt   0x4050b0
+0x4014b0	fldt   -0x20(%ebp)
+0x4014b3	fxch   %st(1)
+0x4014b5	fucompp
+0x4014b7	fnstsw %ax
+0x4014b9	sahf
+0x4014ba	jbe    0x4014c3 <main()+99>
+;16 :			y3 = 0;
+0x4014bc	fldz
+0x4014be	fstpt  -0x14(%ebp)
+0x4014c1	jmp    0x4014c9 <main()+105>
+;17 :		}
+;18 :		else
+;19 :		{
+;20 :			y3 = x;
+0x4014c3	fldt   -0x20(%ebp)
+0x4014c6	fstpt  -0x14(%ebp)
+;21 :		}
+;22 :		cout<<"x="<<x<<" y1="<<y1<<" y2="<<y2<<" 23="<<y3<<" ";
+0x4014c9	movl   $0x405071,0x4(%esp)
+0x4014d1	movl   $0x6ff01a40,(%esp)
+0x4014d8	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x4014dd	fldt   -0x20(%ebp)
+0x4014e0	fstpt  (%esp)
+0x4014e3	mov    %eax,%ecx
+0x4014e5	call   0x4015ec <std::ostream::operator<<(long double)>
+0x4014ea	sub    $0xc,%esp
+0x4014ed	movl   $0x405074,0x4(%esp)
+0x4014f5	mov    %eax,(%esp)
+0x4014f8	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x4014fd	fldt   -0x2c(%ebp)
+0x401500	fstpt  (%esp)
+0x401503	mov    %eax,%ecx
+0x401505	call   0x4015ec <std::ostream::operator<<(long double)>
+0x40150a	sub    $0xc,%esp
+0x40150d	movl   $0x405079,0x4(%esp)
+0x401515	mov    %eax,(%esp)
+0x401518	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40151d	fldt   -0x38(%ebp)
+0x401520	fstpt  (%esp)
+0x401523	mov    %eax,%ecx
+0x401525	call   0x4015ec <std::ostream::operator<<(long double)>
+0x40152a	sub    $0xc,%esp
+0x40152d	movl   $0x40507e,0x4(%esp)
+0x401535	mov    %eax,(%esp)
+0x401538	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40153d	fldt   -0x14(%ebp)
+0x401540	fstpt  (%esp)
+0x401543	mov    %eax,%ecx
+0x401545	call   0x4015ec <std::ostream::operator<<(long double)>
+0x40154a	sub    $0xc,%esp
+0x40154d	movl   $0x405083,0x4(%esp)
+0x401555	mov    %eax,(%esp)
+0x401558	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+;26 :		system("Pause");
+0x40155d	movl   $0x405085,(%esp)
+0x401564	call   0x403bb8 <system>
+;27 :		return 0;
+0x401569	mov    $0x0,%eax
+;28 :	}
+0x40156e	mov    -0x4(%ebp),%ecx
+0x401571	leave
+0x401572	lea    -0x4(%ecx),%esp
+0x401575	ret
+;6  :	int main() {
+0x401460	lea    0x4(%esp),%ecx
+0x401464	and    $0xfffffff0,%esp
+0x401467	pushl  -0x4(%ecx)
+0x40146a	push   %ebp
+0x40146b	mov    %esp,%ebp
+0x40146d	push   %ecx
+0x40146e	sub    $0x44,%esp
+0x401471	call   0x401b30 <__main>
+;8  :		long double x=10;
+0x401476	fldt   0x405090
+0x40147c	fstpt  -0x20(%ebp)
+;9  :		long double y1=0;
+0x40147f	fldz
+0x401481	fstpt  -0x2c(%ebp)
+;10 :		long double y2=0;
+0x401484	fldz
+0x401486	fstpt  -0x38(%ebp)
+;11 :		long double y3=0;
+0x401489	fldz
+0x40148b	fstpt  -0x14(%ebp)
+;13 :		y1 = x * 5;
+0x40148e	fldt   -0x20(%ebp)
+0x401491	fldt   0x4050a0
+0x401497	fmulp  %st,%st(1)
+0x401499	fstpt  -0x2c(%ebp)
+;14 :		y2 = x * 7;
+0x40149c	fldt   -0x20(%ebp)
+0x40149f	fldt   0x4050b0
+0x4014a5	fmulp  %st,%st(1)
+0x4014a7	fstpt  -0x38(%ebp)
+;15 :		if (x < 7) {
+0x4014aa	fldt   0x4050b0
+0x4014b0	fldt   -0x20(%ebp)
+0x4014b3	fxch   %st(1)
+0x4014b5	fucompp
+0x4014b7	fnstsw %ax
+0x4014b9	sahf
+0x4014ba	jbe    0x4014c3 <main()+99>
+;16 :			y3 = 0;
+0x4014bc	fldz
+0x4014be	fstpt  -0x14(%ebp)
+0x4014c1	jmp    0x4014c9 <main()+105>
+;17 :		}
+;18 :		else
+;19 :		{
+;20 :			y3 = x;
+0x4014c3	fldt   -0x20(%ebp)
+0x4014c6	fstpt  -0x14(%ebp)
+;21 :		}
+;22 :		cout<<"x="<<x<<" y1="<<y1<<" y2="<<y2<<" 23="<<y3<<" ";
+0x4014c9	movl   $0x405071,0x4(%esp)
+0x4014d1	movl   $0x6ff01a40,(%esp)
+0x4014d8	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x4014dd	fldt   -0x20(%ebp)
+0x4014e0	fstpt  (%esp)
+0x4014e3	mov    %eax,%ecx
+0x4014e5	call   0x4015ec <std::ostream::operator<<(long double)>
+0x4014ea	sub    $0xc,%esp
+0x4014ed	movl   $0x405074,0x4(%esp)
+0x4014f5	mov    %eax,(%esp)
+0x4014f8	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x4014fd	fldt   -0x2c(%ebp)
+0x401500	fstpt  (%esp)
+0x401503	mov    %eax,%ecx
+0x401505	call   0x4015ec <std::ostream::operator<<(long double)>
+0x40150a	sub    $0xc,%esp
+0x40150d	movl   $0x405079,0x4(%esp)
+0x401515	mov    %eax,(%esp)
+0x401518	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40151d	fldt   -0x38(%ebp)
+0x401520	fstpt  (%esp)
+0x401523	mov    %eax,%ecx
+0x401525	call   0x4015ec <std::ostream::operator<<(long double)>
+0x40152a	sub    $0xc,%esp
+0x40152d	movl   $0x40507e,0x4(%esp)
+0x401535	mov    %eax,(%esp)
+0x401538	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40153d	fldt   -0x14(%ebp)
+0x401540	fstpt  (%esp)
+0x401543	mov    %eax,%ecx
+0x401545	call   0x4015ec <std::ostream::operator<<(long double)>
+0x40154a	sub    $0xc,%esp
+0x40154d	movl   $0x405083,0x4(%esp)
+0x401555	mov    %eax,(%esp)
+0x401558	call   0x4015d4 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+;26 :		system("Pause");
+0x40155d	movl   $0x405085,(%esp)
+0x401564	call   0x403bb8 <system>
+;27 :		return 0;
+0x401569	mov    $0x0,%eax
+;28 :	}
+0x40156e	mov    -0x4(%ebp),%ecx
+0x401571	leave
+0x401572	lea    -0x4(%ecx),%esp
+0x401575	ret

@@ -1,0 +1,252 @@
+Project title : one
+Project path  : D:\институт\3 КУРС\Архитектура вычислительных систем\Arh_VS_Labs\Lab_2\CodeBlocks\one\
+
+Frame function: main (D:\институт\3 КУРС\Архитектура вычислительных систем\Arh_VS_Labs\Lab_2\CodeBlocks\one\main.cpp:10)
+Frame address : 0x61ff30
+--------------------------------------------------------------------------------
+;6  :	int main() {
+0x401460	lea    0x4(%esp),%ecx
+0x401464	and    $0xfffffff0,%esp
+0x401467	pushl  -0x4(%ecx)
+0x40146a	push   %ebp
+0x40146b	mov    %esp,%ebp
+0x40146d	push   %ecx
+0x40146e	sub    $0x34,%esp
+0x401471	call   0x401ba0 <__main>
+;8  :		long long x=10;
+0x401476	movl   $0xa,-0x18(%ebp)
+0x40147d	movl   $0x0,-0x14(%ebp)
+;9  :		long long y1=0;
+0x401484	movl   $0x0,-0x20(%ebp)
+0x40148b	movl   $0x0,-0x1c(%ebp)
+;10 :		long long y2=0;
+0x401492	movl   $0x0,-0x28(%ebp)
+0x401499	movl   $0x0,-0x24(%ebp)
+;11 :		long long y3=0;
+0x4014a0	movl   $0x0,-0x10(%ebp)
+0x4014a7	movl   $0x0,-0xc(%ebp)
+;13 :		y1 = x * 5;
+0x4014ae	mov    -0x14(%ebp),%eax
+0x4014b1	imul   $0x5,%eax,%edx
+0x4014b4	mov    -0x18(%ebp),%eax
+0x4014b7	imul   $0x0,%eax,%eax
+0x4014ba	lea    (%edx,%eax,1),%ecx
+0x4014bd	mov    $0x5,%eax
+0x4014c2	mull   -0x18(%ebp)
+0x4014c5	add    %edx,%ecx
+0x4014c7	mov    %ecx,%edx
+0x4014c9	mov    %eax,-0x20(%ebp)
+0x4014cc	mov    %edx,-0x1c(%ebp)
+0x4014cf	mov    %eax,-0x20(%ebp)
+0x4014d2	mov    %edx,-0x1c(%ebp)
+;14 :		y2 = x * 7;
+0x4014d5	mov    -0x14(%ebp),%eax
+0x4014d8	imul   $0x7,%eax,%edx
+0x4014db	mov    -0x18(%ebp),%eax
+0x4014de	imul   $0x0,%eax,%eax
+0x4014e1	lea    (%edx,%eax,1),%ecx
+0x4014e4	mov    $0x7,%eax
+0x4014e9	mull   -0x18(%ebp)
+0x4014ec	add    %edx,%ecx
+0x4014ee	mov    %ecx,%edx
+0x4014f0	mov    %eax,-0x28(%ebp)
+0x4014f3	mov    %edx,-0x24(%ebp)
+0x4014f6	mov    %eax,-0x28(%ebp)
+0x4014f9	mov    %edx,-0x24(%ebp)
+;15 :		if (x < 7) {
+0x4014fc	cmpl   $0x0,-0x14(%ebp)
+0x401500	jg     0x40151e <main()+190>
+0x401502	cmpl   $0x0,-0x14(%ebp)
+0x401506	js     0x40150e <main()+174>
+0x401508	cmpl   $0x6,-0x18(%ebp)
+0x40150c	ja     0x40151e <main()+190>
+;16 :			y3 = 0;
+0x40150e	movl   $0x0,-0x10(%ebp)
+0x401515	movl   $0x0,-0xc(%ebp)
+0x40151c	jmp    0x40152a <main()+202>
+;17 :		}
+;18 :		else
+;19 :		{
+;20 :			y3 = x;
+0x40151e	mov    -0x18(%ebp),%eax
+0x401521	mov    -0x14(%ebp),%edx
+0x401524	mov    %eax,-0x10(%ebp)
+0x401527	mov    %edx,-0xc(%ebp)
+;21 :		}
+;22 :		cout<<"x="<<x<<" y1="<<y1<<" y2="<<y2<<" 23="<<y3<<" ";
+0x40152a	movl   $0x405065,0x4(%esp)
+0x401532	movl   $0x6ff01a40,(%esp)
+0x401539	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40153e	mov    %eax,%ecx
+0x401540	mov    -0x18(%ebp),%eax
+0x401543	mov    -0x14(%ebp),%edx
+0x401546	mov    %eax,(%esp)
+0x401549	mov    %edx,0x4(%esp)
+0x40154d	call   0x401668 <std::ostream::operator<<(long long)>
+0x401552	sub    $0x8,%esp
+0x401555	movl   $0x405068,0x4(%esp)
+0x40155d	mov    %eax,(%esp)
+0x401560	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x401565	mov    %eax,%ecx
+0x401567	mov    -0x20(%ebp),%eax
+0x40156a	mov    -0x1c(%ebp),%edx
+0x40156d	mov    %eax,(%esp)
+0x401570	mov    %edx,0x4(%esp)
+0x401574	call   0x401668 <std::ostream::operator<<(long long)>
+0x401579	sub    $0x8,%esp
+0x40157c	movl   $0x40506d,0x4(%esp)
+0x401584	mov    %eax,(%esp)
+0x401587	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40158c	mov    %eax,%ecx
+0x40158e	mov    -0x28(%ebp),%eax
+0x401591	mov    -0x24(%ebp),%edx
+0x401594	mov    %eax,(%esp)
+0x401597	mov    %edx,0x4(%esp)
+0x40159b	call   0x401668 <std::ostream::operator<<(long long)>
+0x4015a0	sub    $0x8,%esp
+0x4015a3	movl   $0x405072,0x4(%esp)
+0x4015ab	mov    %eax,(%esp)
+0x4015ae	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x4015b3	mov    %eax,%ecx
+0x4015b5	mov    -0x10(%ebp),%eax
+0x4015b8	mov    -0xc(%ebp),%edx
+0x4015bb	mov    %eax,(%esp)
+0x4015be	mov    %edx,0x4(%esp)
+0x4015c2	call   0x401668 <std::ostream::operator<<(long long)>
+0x4015c7	sub    $0x8,%esp
+0x4015ca	movl   $0x405077,0x4(%esp)
+0x4015d2	mov    %eax,(%esp)
+0x4015d5	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+;26 :		system("Pause");
+0x4015da	movl   $0x405079,(%esp)
+0x4015e1	call   0x403c28 <system>
+;27 :		return 0;
+0x4015e6	mov    $0x0,%eax
+;28 :	}
+0x4015eb	mov    -0x4(%ebp),%ecx
+0x4015ee	leave
+0x4015ef	lea    -0x4(%ecx),%esp
+0x4015f2	ret
+;6  :	int main() {
+0x401460	lea    0x4(%esp),%ecx
+0x401464	and    $0xfffffff0,%esp
+0x401467	pushl  -0x4(%ecx)
+0x40146a	push   %ebp
+0x40146b	mov    %esp,%ebp
+0x40146d	push   %ecx
+0x40146e	sub    $0x34,%esp
+0x401471	call   0x401ba0 <__main>
+;8  :		long long x=10;
+0x401476	movl   $0xa,-0x18(%ebp)
+0x40147d	movl   $0x0,-0x14(%ebp)
+;9  :		long long y1=0;
+0x401484	movl   $0x0,-0x20(%ebp)
+0x40148b	movl   $0x0,-0x1c(%ebp)
+;10 :		long long y2=0;
+0x401492	movl   $0x0,-0x28(%ebp)
+0x401499	movl   $0x0,-0x24(%ebp)
+;11 :		long long y3=0;
+0x4014a0	movl   $0x0,-0x10(%ebp)
+0x4014a7	movl   $0x0,-0xc(%ebp)
+;13 :		y1 = x * 5;
+0x4014ae	mov    -0x14(%ebp),%eax
+0x4014b1	imul   $0x5,%eax,%edx
+0x4014b4	mov    -0x18(%ebp),%eax
+0x4014b7	imul   $0x0,%eax,%eax
+0x4014ba	lea    (%edx,%eax,1),%ecx
+0x4014bd	mov    $0x5,%eax
+0x4014c2	mull   -0x18(%ebp)
+0x4014c5	add    %edx,%ecx
+0x4014c7	mov    %ecx,%edx
+0x4014c9	mov    %eax,-0x20(%ebp)
+0x4014cc	mov    %edx,-0x1c(%ebp)
+0x4014cf	mov    %eax,-0x20(%ebp)
+0x4014d2	mov    %edx,-0x1c(%ebp)
+;14 :		y2 = x * 7;
+0x4014d5	mov    -0x14(%ebp),%eax
+0x4014d8	imul   $0x7,%eax,%edx
+0x4014db	mov    -0x18(%ebp),%eax
+0x4014de	imul   $0x0,%eax,%eax
+0x4014e1	lea    (%edx,%eax,1),%ecx
+0x4014e4	mov    $0x7,%eax
+0x4014e9	mull   -0x18(%ebp)
+0x4014ec	add    %edx,%ecx
+0x4014ee	mov    %ecx,%edx
+0x4014f0	mov    %eax,-0x28(%ebp)
+0x4014f3	mov    %edx,-0x24(%ebp)
+0x4014f6	mov    %eax,-0x28(%ebp)
+0x4014f9	mov    %edx,-0x24(%ebp)
+;15 :		if (x < 7) {
+0x4014fc	cmpl   $0x0,-0x14(%ebp)
+0x401500	jg     0x40151e <main()+190>
+0x401502	cmpl   $0x0,-0x14(%ebp)
+0x401506	js     0x40150e <main()+174>
+0x401508	cmpl   $0x6,-0x18(%ebp)
+0x40150c	ja     0x40151e <main()+190>
+;16 :			y3 = 0;
+0x40150e	movl   $0x0,-0x10(%ebp)
+0x401515	movl   $0x0,-0xc(%ebp)
+0x40151c	jmp    0x40152a <main()+202>
+;17 :		}
+;18 :		else
+;19 :		{
+;20 :			y3 = x;
+0x40151e	mov    -0x18(%ebp),%eax
+0x401521	mov    -0x14(%ebp),%edx
+0x401524	mov    %eax,-0x10(%ebp)
+0x401527	mov    %edx,-0xc(%ebp)
+;21 :		}
+;22 :		cout<<"x="<<x<<" y1="<<y1<<" y2="<<y2<<" 23="<<y3<<" ";
+0x40152a	movl   $0x405065,0x4(%esp)
+0x401532	movl   $0x6ff01a40,(%esp)
+0x401539	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40153e	mov    %eax,%ecx
+0x401540	mov    -0x18(%ebp),%eax
+0x401543	mov    -0x14(%ebp),%edx
+0x401546	mov    %eax,(%esp)
+0x401549	mov    %edx,0x4(%esp)
+0x40154d	call   0x401668 <std::ostream::operator<<(long long)>
+0x401552	sub    $0x8,%esp
+0x401555	movl   $0x405068,0x4(%esp)
+0x40155d	mov    %eax,(%esp)
+0x401560	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x401565	mov    %eax,%ecx
+0x401567	mov    -0x20(%ebp),%eax
+0x40156a	mov    -0x1c(%ebp),%edx
+0x40156d	mov    %eax,(%esp)
+0x401570	mov    %edx,0x4(%esp)
+0x401574	call   0x401668 <std::ostream::operator<<(long long)>
+0x401579	sub    $0x8,%esp
+0x40157c	movl   $0x40506d,0x4(%esp)
+0x401584	mov    %eax,(%esp)
+0x401587	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40158c	mov    %eax,%ecx
+0x40158e	mov    -0x28(%ebp),%eax
+0x401591	mov    -0x24(%ebp),%edx
+0x401594	mov    %eax,(%esp)
+0x401597	mov    %edx,0x4(%esp)
+0x40159b	call   0x401668 <std::ostream::operator<<(long long)>
+0x4015a0	sub    $0x8,%esp
+0x4015a3	movl   $0x405072,0x4(%esp)
+0x4015ab	mov    %eax,(%esp)
+0x4015ae	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x4015b3	mov    %eax,%ecx
+0x4015b5	mov    -0x10(%ebp),%eax
+0x4015b8	mov    -0xc(%ebp),%edx
+0x4015bb	mov    %eax,(%esp)
+0x4015be	mov    %edx,0x4(%esp)
+0x4015c2	call   0x401668 <std::ostream::operator<<(long long)>
+0x4015c7	sub    $0x8,%esp
+0x4015ca	movl   $0x405077,0x4(%esp)
+0x4015d2	mov    %eax,(%esp)
+0x4015d5	call   0x401650 <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+;26 :		system("Pause");
+0x4015da	movl   $0x405079,(%esp)
+0x4015e1	call   0x403c28 <system>
+;27 :		return 0;
+0x4015e6	mov    $0x0,%eax
+;28 :	}
+0x4015eb	mov    -0x4(%ebp),%ecx
+0x4015ee	leave
+0x4015ef	lea    -0x4(%ecx),%esp
+0x4015f2	ret

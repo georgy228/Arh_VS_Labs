@@ -1,0 +1,96 @@
+Project title : one
+Project path  : D:\институт\3 КУРС\Архитектура вычислительных систем\Arh_VS_Labs\Lab_2\CodeBlocks\one\
+
+Frame function: main (D:\институт\3 КУРС\Архитектура вычислительных систем\Arh_VS_Labs\Lab_2\CodeBlocks\one\main.cpp:15)
+Frame address : 0x61ff30
+--------------------------------------------------------------------------------
+;12 :	int main() {
+0x401460	lea    0x4(%esp),%ecx
+0x401464	and    $0xfffffff0,%esp
+0x401467	pushl  -0x4(%ecx)
+0x40146a	push   %ebp
+0x40146b	mov    %esp,%ebp
+0x40146d	push   %edi
+0x40146e	push   %esi
+0x40146f	push   %ebx
+0x401470	push   %ecx
+0x401471	sub    $0x28,%esp
+0x401474	call   0x401b30 <__main>
+;15 :		y1 = x * 5;
+0x401479	mov    0x404004,%edx
+0x40147f	mov    %edx,%eax
+0x401481	shl    $0x2,%eax
+0x401484	add    %edx,%eax
+0x401486	mov    %eax,0x407020
+;16 :		y2 = x * 7;
+0x40148b	mov    0x404004,%edx
+0x401491	mov    %edx,%eax
+0x401493	shl    $0x3,%eax
+0x401496	sub    %edx,%eax
+0x401498	mov    %eax,0x407024
+;17 :		if (x < 7) {
+0x40149d	mov    0x404004,%eax
+0x4014a2	cmp    $0x6,%eax
+0x4014a5	jg     0x4014b3 <main()+83>
+;18 :			y3 = 0;
+0x4014a7	movl   $0x0,0x407028
+0x4014b1	jmp    0x4014bd <main()+93>
+;19 :		}
+;20 :		else
+;21 :		{
+;22 :			y3 = x;
+0x4014b3	mov    0x404004,%eax
+0x4014b8	mov    %eax,0x407028
+;23 :		}
+;24 :		cout<<"x="<<x<<" y1="<<y1<<" y2="<<y2<<" 23="<<y3<<" ";
+0x4014bd	mov    0x407028,%ebx
+0x4014c3	mov    0x407024,%esi
+0x4014c9	mov    0x407020,%edi
+0x4014cf	mov    0x404004,%eax
+0x4014d4	mov    %eax,-0x1c(%ebp)
+0x4014d7	movl   $0x405065,0x4(%esp)
+0x4014df	movl   $0x6ff01a40,(%esp)
+0x4014e6	call   0x4015dc <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x4014eb	mov    -0x1c(%ebp),%ecx
+0x4014ee	mov    %ecx,(%esp)
+0x4014f1	mov    %eax,%ecx
+0x4014f3	call   0x4015f4 <std::ostream::operator<<(int)>
+0x4014f8	sub    $0x4,%esp
+0x4014fb	movl   $0x405068,0x4(%esp)
+0x401503	mov    %eax,(%esp)
+0x401506	call   0x4015dc <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x40150b	mov    %edi,(%esp)
+0x40150e	mov    %eax,%ecx
+0x401510	call   0x4015f4 <std::ostream::operator<<(int)>
+0x401515	sub    $0x4,%esp
+0x401518	movl   $0x40506d,0x4(%esp)
+0x401520	mov    %eax,(%esp)
+0x401523	call   0x4015dc <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x401528	mov    %esi,(%esp)
+0x40152b	mov    %eax,%ecx
+0x40152d	call   0x4015f4 <std::ostream::operator<<(int)>
+0x401532	sub    $0x4,%esp
+0x401535	movl   $0x405072,0x4(%esp)
+0x40153d	mov    %eax,(%esp)
+0x401540	call   0x4015dc <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+0x401545	mov    %ebx,(%esp)
+0x401548	mov    %eax,%ecx
+0x40154a	call   0x4015f4 <std::ostream::operator<<(int)>
+0x40154f	sub    $0x4,%esp
+0x401552	movl   $0x405077,0x4(%esp)
+0x40155a	mov    %eax,(%esp)
+0x40155d	call   0x4015dc <std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)>
+;27 :		system("Pause");
+0x401562	movl   $0x405079,(%esp)
+0x401569	call   0x403bb8 <system>
+;28 :		return 0;
+0x40156e	mov    $0x0,%eax
+;29 :	}
+0x401573	lea    -0x10(%ebp),%esp
+0x401576	pop    %ecx
+0x401577	pop    %ebx
+0x401578	pop    %esi
+0x401579	pop    %edi
+0x40157a	pop    %ebp
+0x40157b	lea    -0x4(%ecx),%esp
+0x40157e	ret
