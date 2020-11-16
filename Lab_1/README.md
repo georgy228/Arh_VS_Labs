@@ -19,6 +19,7 @@
 #### Вариант: x=-34; y=y<sup>15</sup>+7
 
 #### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_1/code/first.cpp)
+![](//https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_1/pics/1.png)
 
 ## Задание №2
 Найдите и выпишите в отчёт минимальное и максимальное 16
@@ -26,3 +27,4 @@
 форме (4 числа, каждое из которых представлено в 4 формах).
 
 #### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_1/code/second.cpp)
+![](//https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_1/pics/2.png)
