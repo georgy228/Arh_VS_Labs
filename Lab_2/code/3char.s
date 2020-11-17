@@ -1,0 +1,98 @@
+;8  :	int main() {
+0x401460	push   %ebp
+0x401461	mov    %esp,%ebp
+0x401463	push   %edi
+0x401464	and    $0xfffffff0,%esp
+0x401467	sub    $0x1a0,%esp
+0x40146d	call   0x401c20 <__main>
+;10 :		char x[100]="10";
+0x401472	movl   $0x3031,0x13c(%esp)
+0x40147d	lea    0x140(%esp),%edx
+0x401484	mov    $0x0,%eax
+0x401489	mov    $0x18,%ecx
+0x40148e	mov    %edx,%edi
+0x401490	rep stos %eax,%es:(%edi)
+;11 :		char y1[100]="hello";
+0x401492	movl   $0x6c6c6568,0xd8(%esp)
+0x40149d	movl   $0x6f,0xdc(%esp)
+0x4014a8	lea    0xe0(%esp),%edx
+0x4014af	mov    $0x0,%eax
+0x4014b4	mov    $0x17,%ecx
+0x4014b9	mov    %edx,%edi
+0x4014bb	rep stos %eax,%es:(%edi)
+;12 :		char y2[100]="darkness";
+0x4014bd	movl   $0x6b726164,0x74(%esp)
+0x4014c5	movl   $0x7373656e,0x78(%esp)
+0x4014cd	movl   $0x0,0x7c(%esp)
+0x4014d5	lea    0x80(%esp),%edx
+0x4014dc	mov    $0x0,%eax
+0x4014e1	mov    $0x16,%ecx
+0x4014e6	mov    %edx,%edi
+0x4014e8	rep stos %eax,%es:(%edi)
+;13 :		char y3[100]="my old friend";
+0x4014ea	movl   $0x6f20796d,0x10(%esp)
+0x4014f2	movl   $0x6620646c,0x14(%esp)
+0x4014fa	movl   $0x6e656972,0x18(%esp)
+0x401502	movl   $0x64,0x1c(%esp)
+0x40150a	lea    0x20(%esp),%edx
+0x40150e	mov    $0x0,%eax
+0x401513	mov    $0x15,%ecx
+0x401518	mov    %edx,%edi
+0x40151a	rep stos %eax,%es:(%edi)
+;15 :	    strncat(y1,x,100);
+0x40151c	movl   $0x64,0x8(%esp)
+0x401524	lea    0x13c(%esp),%eax
+0x40152b	mov    %eax,0x4(%esp)
+0x40152f	lea    0xd8(%esp),%eax
+0x401536	mov    %eax,(%esp)
+0x401539	call   0x403cb0 <strncat>
+;16 :		strncat(y2,x,100);
+0x40153e	movl   $0x64,0x8(%esp)
+0x401546	lea    0x13c(%esp),%eax
+0x40154d	mov    %eax,0x4(%esp)
+0x401551	lea    0x74(%esp),%eax
+0x401555	mov    %eax,(%esp)
+0x401558	call   0x403cb0 <strncat>
+;17 :		if (strlen(x) < 7) {
+0x40155d	lea    0x13c(%esp),%eax
+0x401564	mov    %eax,(%esp)
+0x401567	call   0x403cb8 <strlen>
+0x40156c	cmp    $0x6,%eax
+0x40156f	ja     0x401592 <main()+306>
+;18 :			strncat(y3,x,100);
+0x401571	movl   $0x64,0x8(%esp)
+0x401579	lea    0x13c(%esp),%eax
+0x401580	mov    %eax,0x4(%esp)
+0x401584	lea    0x10(%esp),%eax
+0x401588	mov    %eax,(%esp)
+0x40158b	call   0x403cb0 <strncat>
+0x401590	jmp    0x4015bf <main()+351>
+;19 :		}
+;20 :		else
+;21 :		{
+;22 :			strncat(y3,"empty",5);
+0x401592	lea    0x10(%esp),%eax
+0x401596	mov    $0xffffffff,%ecx
+0x40159b	mov    %eax,%edx
+0x40159d	mov    $0x0,%eax
+0x4015a2	mov    %edx,%edi
+0x4015a4	repnz scas %es:(%edi),%al
+0x4015a6	mov    %ecx,%eax
+0x4015a8	not    %eax
+0x4015aa	lea    -0x1(%eax),%edx
+0x4015ad	lea    0x10(%esp),%eax
+0x4015b1	add    %edx,%eax
+0x4015b3	movl   $0x74706d65,(%eax)
+0x4015b9	movw   $0x79,0x4(%eax)
+;23 :		}
+;24 :		cout<<"x="<<x<<" y1="<<y1<<" y2="<<y2<<" 23="<<y3<<" ";
+*************ПРОПУЩЕНО МНОГО КОДА ДЛЯ COUT**********************
+;27 :		system("Pause");
+0x401661	movl   $0x405079,(%esp)
+0x401668	call   0x403ca8 <system>
+;28 :		return 0;
+0x40166d	mov    $0x0,%eax
+;29 :	}
+0x401672	mov    -0x4(%ebp),%edi
+0x401675	leave
+0x401676	ret
