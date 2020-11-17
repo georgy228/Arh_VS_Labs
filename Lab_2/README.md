@@ -122,6 +122,7 @@ C++).
 
 #### 3)	Char
 ##### [Код](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_2/code/3char.s)
+##### [Код си](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_2/code/3char.cpp)
 
 #### 4)	Short
 ##### [Код](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_2/code/3short.s)
