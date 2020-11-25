@@ -13,7 +13,7 @@
 ### Решение:
 
 #### [си код](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_2/code/1.cpp)
-#### [ассемблерый код](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_2/code/1.cpp)
+
 
 
 
