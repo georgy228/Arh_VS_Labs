@@ -11,10 +11,20 @@
 Сравните полученный результат с теоретическим. Объясните результат.
 Измените тип операндов на double. Объясните результат.
 
+### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_5/code/1.cpp)
+
+Результат для a=95; b=0.1 и a=95; b=1
+
+![image](https://user-images.githubusercontent.com/51335422/100516587-fa0d5d00-3195-11eb-8a0e-38b1605cf378.png)
+
+
 ## Задание 2
 Составьте программу calc для вычисления выражения с использованием сопроцессора в соответствии со своим вариантом.
 ### Вариант 16:
 ![image](https://user-images.githubusercontent.com/51335422/100511539-aee84f80-317f-11eb-8b37-1d519da7c03f.png)
+### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_5/code/2.cpp)
+![image](https://user-images.githubusercontent.com/51335422/100518789-cd147680-31a4-11eb-8a7d-fcc105b70f1b.png)
+
 ### Вариант 17:
 ![image](https://user-images.githubusercontent.com/51335422/100511932-cf180e80-317f-11eb-819d-44b3b92aecf8.png)
 
