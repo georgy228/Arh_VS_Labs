@@ -19,6 +19,16 @@
 ### Вариант:
 ![image](https://user-images.githubusercontent.com/51335422/100883695-aebebb80-34c1-11eb-92d4-5c5dca802c9c.png)
 ### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_6/code/2.cpp)
+#### Вывод:
+
+Для x=10 :
+
+![image](https://user-images.githubusercontent.com/51335422/101985518-9efd5f00-3c99-11eb-856f-934560c7fc69.png)
+
+Для х=1 :
+
+![image](https://user-images.githubusercontent.com/51335422/101985557-cfdd9400-3c99-11eb-8057-cc4f1beb4844.png)
+
 
 
 
