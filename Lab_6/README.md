@@ -18,7 +18,7 @@
 Вычислите для заданного вещественного x
 ### Вариант:
 ![image](https://user-images.githubusercontent.com/51335422/100883695-aebebb80-34c1-11eb-92d4-5c5dca802c9c.png)
-### [Решение]()
+### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_6/code/2.cpp)
 
 
 
