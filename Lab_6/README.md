@@ -36,11 +36,11 @@
 ## Задание 3
 Задайте с клавиатуры 𝑁 и напечатайте первые 𝑁 членов последовательности (целой).
 ![image](https://user-images.githubusercontent.com/51335422/100883862-df9ef080-34c1-11eb-809a-10a3b133aa9f.png)
-### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_6/code/3.cpp)
+### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_7/code/5.cpp)
 
 #### Вывод:
+![image](https://user-images.githubusercontent.com/51335422/102015211-43030b00-3d6b-11eb-9d8d-18c9c238e2e5.png)
 
-![image](https://user-images.githubusercontent.com/51335422/101986133-1da7cb80-3c9d-11eb-8687-7ef85bf35181.png)
 
 
 ## Задание 4
