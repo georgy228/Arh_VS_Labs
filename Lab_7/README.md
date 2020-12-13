@@ -45,8 +45,10 @@ Cоздайте, используя язык высокого уровня, ма
 
 ### Вариант: Найти максимальный элемент массива.
 
-### [Решение]()
+### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_7/code/2.cpp)
 #### Вывод:
+![image](https://user-images.githubusercontent.com/51335422/102011361-96b62a00-3d54-11eb-870e-b34eba37e2df.png)
+
 
 
 
