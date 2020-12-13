@@ -83,7 +83,7 @@ Cоздайте, используя язык высокого уровня, ма
 
 
 
-### [Решение]()
+### [Решение](https://github.com/sekibura/Arh_VS_Labs/blob/master/Lab_7/code/3.cpp)
 #### Вывод:
 
 ![image](https://user-images.githubusercontent.com/51335422/102011793-a7b46a80-3d57-11eb-97f0-0bc276a5e77c.png)
